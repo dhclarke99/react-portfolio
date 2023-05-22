@@ -1,35 +1,25 @@
 import React from 'react';
+import logo from '../../images/logo192.png';
 
 export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
-      <image>
-        <h2>
-          Project 1
-        </h2>
-
-      </image>
-      <image>
-        <h2>
-          Project 2
-        </h2>
-      </image>
-      <image>
-        <h2>
-          Project 3
-        </h2>
-      </image>
-      <image>
-        <h2>
-          Project 4
-        </h2>
-      </image>
-      <image>
-        <h2>
-          Project 5
-        </h2>
-      </image>
+      <img src={logo} alt="Project 1">
+      
+      </img>
+      <img src="" alt="Project 2">
+        
+      </img>
+      <img src="" alt="Project 3">
+        
+      </img>
+      <img src="" alt="Project 4">
+        
+      </img>
+      <img src="" alt="Project 5">
+        
+      </img>
     </div>
   );
 }
