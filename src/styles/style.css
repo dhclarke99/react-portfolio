@@ -1,17 +1,18 @@
 #root {
-    background: #24478f
+    background: #003366
 }
 
 html {
     /* To make use of full height of page*/
     min-height: 100%;
     margin: 0;
-    background: #24478f
+    background: #003366
 }
 body {
     min-height: 100%;
     margin: 0;
-    background: #24478f
+    background: #003366;
+    
 }
 
 .container {
@@ -22,4 +23,24 @@ body {
 header {
     min-width: 100%;
     background-color: red;
+}
+
+h1 {
+    color: white
+}
+
+p {
+    color: white
+}
+
+h2 {
+    color: white
+}
+
+h3 {
+    color: white
+}
+
+li {
+    color: white
 }
