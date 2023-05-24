@@ -53,10 +53,17 @@ footer ul {
 }
 
 footer ul li{
-    padding: 20px;
+    padding: 30px;
     list-style: none;
+    width: 10px;
+    height: 10px;
     
     
+}
+
+footer ul li img {
+    object-fit: contain;
+    height: 40px;
 }
 
 h1 {
