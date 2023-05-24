@@ -13,8 +13,14 @@
 }
 
 .col a img {
-    width: 300px;
+    width: 400px;
     height: 250px;
+}
+
+.portfolio {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
 }
 
 

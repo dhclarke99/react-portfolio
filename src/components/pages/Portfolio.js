@@ -12,7 +12,7 @@ export default function Portfolio() {
     <div className="container" id="tab-content">
       <h1>Portfolio</h1>
       <br></br>
-      <div className="row">
+      <div className="row portfolio">
       <div className="col portfolio-image">
         <h2>Tech Blog</h2>
       <a href="https://github.com/dhclarke99/tech-blog">
@@ -30,7 +30,7 @@ export default function Portfolio() {
       </a>
       </div>
       </div>
-      <div className="row">
+      <div className="row portfolio">
       <div className="col portfolio-image">
       <h2>Date Planner</h2>
       <a href="https://github.com/dhclarke99/date_planner">
@@ -48,7 +48,7 @@ export default function Portfolio() {
       </a>
       </div>
       </div>
-      <div className="row">
+      <div className="row portfolio">
       <div className="col portfolio-image">
       <h2>ExpressJS NoteTaker</h2>
       <a href="https://github.com/dhclarke99/expressjs-note-taker">
