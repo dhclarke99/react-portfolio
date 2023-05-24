@@ -4,7 +4,7 @@ import '../styles/style.css';
 
 export default function Footer() {
 return (
-    <footer id="tab-content">
+    <footer >
         <ul>
           <li>
             Github
