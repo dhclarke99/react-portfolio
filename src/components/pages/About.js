@@ -5,13 +5,9 @@ export default function About() {
     <div id="tab-content">
       <h1>About Me</h1>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+      My name is David Clarke, welcome to my professional portfolio. I am originally from the Bay Area and am currently living in Brooklyn, NY. In my free time I like to lift weights, play basketball, play guitar, and hang out with friends around the city.
       </p>
+      <p>I've created this portfolio to showcase some of the recent work I've done as a full stack web development student at the University of Pennsylvania. Feel free to browse the page, you can contact me using the links at the bottom. Enjoy!</p>
     </div>
   );
 }
