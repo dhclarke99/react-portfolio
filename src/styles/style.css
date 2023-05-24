@@ -23,7 +23,7 @@ body {
     min-height: 100%;
     margin: 0;
     background: #003366;
-    
+    --bs-body-font-family: "Lucida Handwriting", Cursive;
 }
 
 .container {
@@ -34,7 +34,8 @@ body {
 header {
     min-width: 100%;
     background-color: rgb(62, 110, 8);
-    padding: 35px
+    padding: 35px;
+    --bs-body-font-weight: 100px
 }
 
 footer {
