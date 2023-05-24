@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div>
+    <div id="tab-content">
       <h1>About Me</h1>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.

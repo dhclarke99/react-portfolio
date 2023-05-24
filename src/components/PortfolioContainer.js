@@ -4,10 +4,10 @@ import Footer from './Footer';
 
 
 
-export default function PortfolioContainer () {
+export default function PortfolioContainer() {
   return (
     <div className="container">
-     <Header></Header>
+      <Header></Header>
       <Footer></Footer>
     </div>
   );

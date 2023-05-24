@@ -25,7 +25,7 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div id="tab-content">
       <p>
         Hello {firstName} {lastName}
       </p>

@@ -3,7 +3,7 @@ import logo from '../../images/logo192.png';
 
 export default function Portfolio() {
   return (
-    <div className="container">
+    <div className="container" id="tab-content">
       <h1>Portfolio</h1>
       <br></br>
       <div className="row">
