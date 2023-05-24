@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 
 function Contact() {
   // Here we set two state variables for firstName and lastName using `useState`
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
   const handleInputChange = (e) => {
@@ -12,10 +12,10 @@ function Contact() {
     const { name, value } = e.target;
 
     // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    if (name === 'firstName') {
-      setFirstName(value);
-    } else if (name === 'lastName') {
-      setLastName(value);
+    if (name === 'fullName') {
+      setFullName(value);
+    } else if (name === 'email') {
+      setEmail(value);
     } else {
       setMessage(value);
     }
@@ -27,10 +27,10 @@ function Contact() {
     e.preventDefault();
 
     // Alert the user their first and last name, clear the inputs
-    if (firstName && lastName && message ){
-    alert(`<Hello ${firstName} ${lastName}>`);
-    setFirstName('');
-    setLastName('');
+    if (fullName && email && message ){
+    alert(`<Message Received>`);
+    setFullName('');
+    setEmail('');
     setMessage('');
     } else {
       alert('Please fill in all the fields.');
@@ -41,23 +41,23 @@ function Contact() {
 
   return (
     <div id="tab-content">
-      <p>
-        Hello {firstName} {lastName}
-      </p>
+      <h3>
+       Contact
+      </h3>
       <form className="form">
         <input
-          value={firstName}
-          name="firstName"
+          value={fullName}
+          name="fullName"
           onChange={handleInputChange}
           type="text"
-          placeholder="First Name"
+          placeholder="Name"
         />
         <input
-          value={lastName}
-          name="lastName"
+          value={email}
+          name="email"
           onChange={handleInputChange}
           type="text"
-          placeholder="Last Name"
+          placeholder="email"
         />
         <input
           value={message}
