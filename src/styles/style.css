@@ -12,6 +12,11 @@
     font-size: 25px
 }
 
+.col a img {
+    width: 300px;
+    height: 250px;
+}
+
 
 html {
     /* To make use of full height of page*/
