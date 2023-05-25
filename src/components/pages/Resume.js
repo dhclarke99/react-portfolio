@@ -1,12 +1,24 @@
 import React from 'react';
 
+const PDF_URL = 'http://localhost:3000/David_Hernandez_Clarke_Resume.pdf';
+
 export default function Resume() {
+  const downloadFile=(url)=> {
+    const fileName = url.split('/').pop();
+const aTag = document.createElement('a');
+aTag.href =url;
+aTag.setAttribute('download', fileName);
+document.body.appendChild(aTag);
+aTag.click();
+aTag.remove();
+
+  };
   return (
     <div id="tab-content">
       <h1>Resume</h1>
-      <p>
+      <button onClick={()=>{downloadFile(PDF_URL)}}>
         Download my Resume
-      </p>
+      </button>
       <h3>Front-End Proficiencies</h3>
       <ul>
         <li>HTML</li>
