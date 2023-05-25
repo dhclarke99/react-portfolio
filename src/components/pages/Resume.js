@@ -12,6 +12,8 @@ export default function Resume() {
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
       </ul>
       <h3>Back-End Proficiencies</h3>
       <ul>

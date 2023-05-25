@@ -40,11 +40,14 @@ function Contact() {
   }
 
   return (
-    <div id="tab-content">
-      <h3>
+    <div id="form-content">
+      <h1>
        Contact
-      </h3>
+      </h1>
       <form className="form">
+      <h3>
+       Name:
+      </h3>
         <input
           value={fullName}
           name="fullName"
@@ -52,6 +55,9 @@ function Contact() {
           type="text"
           placeholder="Name"
         />
+       <h3>
+       Email address:
+      </h3>
         <input
           value={email}
           name="email"
@@ -59,6 +65,9 @@ function Contact() {
           type="text"
           placeholder="email"
         />
+        <h3>
+       Message:
+      </h3>
         <input
           value={message}
           name="message"
