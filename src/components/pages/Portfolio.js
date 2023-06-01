@@ -23,16 +23,21 @@ export default function Portfolio() {
             onMouseEnter={() => handleMouseEnter(i + index)}
             onMouseLeave={handleMouseLeave}
           >
-            <a href={item.link} className="portfolio-link">
-              <div className="portfolio-image-container">
+            
+              <div className=" portfolio-image-container">
                 <img src={item.image} alt={item.title} className="portfolio-image" />
                 {hoveredItem === i + index && (
                   <div className="portfolio-overlay">
+                    <a href={item.link} className="portfolio-link">
                     <h2>{item.title}</h2>
+                    </a>
+                    <a href={item.gitHubLink} className="portfolio-link">
+                    <h2>GitHub</h2>
+                    </a>
                   </div>
                 )}
               </div>
-            </a>
+           
           </div>
         ))}
       </div>
