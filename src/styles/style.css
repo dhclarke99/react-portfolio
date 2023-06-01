@@ -112,4 +112,52 @@ li {
    
 }
 
+.portfolio-item {
+    position: relative;
+  }
+  
+  .portfolio-image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .portfolio-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-link {
+    display: block;
+  }
+  
+  .portfolio-item:hover .portfolio-image {
+    transform: scale(1.1);
+  }
+  
+  .portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+  }
+  
+  .portfolio-overlay h2 {
+    color: #fff;
+  }
+  
+  
+
 

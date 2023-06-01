@@ -18,18 +18,20 @@ export default function Portfolio() {
       <div className="row portfolio" key={i}>
         {portfolioData.slice(i, i + 2).map((item, index) => (
           <div
-            className="col portfolio-image"
+            className="col portfolio-item"
             key={index}
             onMouseEnter={() => handleMouseEnter(i + index)}
             onMouseLeave={handleMouseLeave}
           >
-            <a href={item.link}>
-              <img src={item.image} alt={item.title} />
-              {hoveredItem === i + index && (
-                <div className="portfolio-overlay">
-                  <h2>{item.title}</h2>
-                </div>
-              )}
+            <a href={item.link} className="portfolio-link">
+              <div className="portfolio-image-container">
+                <img src={item.image} alt={item.title} className="portfolio-image" />
+                {hoveredItem === i + index && (
+                  <div className="portfolio-overlay">
+                    <h2>{item.title}</h2>
+                  </div>
+                )}
+              </div>
             </a>
           </div>
         ))}
