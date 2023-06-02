@@ -181,3 +181,57 @@ li {
       }
   }
   
+ /* Styles for Contact Form */
+
+.form {
+    margin-top: 20px;
+  }
+  
+  .form h3 {
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  
+  .form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .form button {
+    padding: 10px 20px;
+    background-color: rgb(247, 247, 5);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form button:hover {
+    background-color: #e4e400;
+  }
+  
+  @media (max-width: 768px) {
+    #form-content {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .form input,
+    .form button {
+      width: 100%;
+    }
+  
+    .portfolio-item {
+      height: auto;
+      margin: 15px;
+    }
+  
+    .portfolio-overlay h2 {
+      font-size: 1.2rem;
+      margin: 0.3rem;
+    }
+  }
