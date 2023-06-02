@@ -114,19 +114,21 @@ li {
 
 .portfolio-item {
     position: relative;
-    display: inline-block; /* Add this line */
+    display: inline-block;
   }
   
   .portfolio-image-container {
     position: relative;
     overflow: hidden;
-    margin: 40px
+    margin: 40px;
   }
   
   .portfolio-image {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
     transition: transform 0.3s ease;
   }
   
@@ -152,7 +154,7 @@ li {
     transition: opacity 0.3s ease;
   }
   
-  .portfolio-item:hover .portfolio-overlay {
+  .portfolio-image-container:hover .portfolio-overlay {
     opacity: 1;
   }
   
