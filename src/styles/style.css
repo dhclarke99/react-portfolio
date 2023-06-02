@@ -171,13 +171,13 @@ li {
   
   @media (max-width: 768px) {
     .portfolio-item {
-      height: auto; /* Adjust height for mobile */
-      margin: 15px; /* Adjust margin for mobile */
+      height: auto;
+      margin: 15px; 
     }
 
     .portfolio-overlay h2 {
-        font-size: 1.2rem; /* Adjust font size for mobile */
-        margin: 0.3rem; /* Adjust margin for mobile */
+        font-size: 1.2rem;
+        margin: 0.3rem; 
       }
   }
   
