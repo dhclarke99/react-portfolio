@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 
-
 function Contact() {
-  // Here we set two state variables for firstName and lastName using `useState`
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [emailError, setEmailError] = useState('');
 
   const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
     const { name, value } = e.target;
-
-    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
     if (name === 'fullName') {
       setFullName(value);
     } else if (name === 'email') {
@@ -19,35 +15,39 @@ function Contact() {
     } else {
       setMessage(value);
     }
-    // return name === 'firstName' ? setFirstName(value) : setLastName(value);
+  };
+
+  const validateEmail = (email) => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
   };
 
   const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
+    if (!fullName || !email || !message) {
+      alert('Please fill in all the fields.');
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      setEmailError('Please enter a valid email address.');
+      return;
+    }
+
     // Alert the user their first and last name, clear the inputs
-    if (fullName && email && message ){
-    alert(`<Message Received>`);
+    alert(`Hello ${fullName}, thank you for your message!`);
     setFullName('');
     setEmail('');
     setMessage('');
-    } else {
-      alert('Please fill in all the fields.');
-    }
-  ; 
-
-  }
+    setEmailError('');
+  };
 
   return (
     <div id="form-content">
-      <h1>
-       Contact
-      </h1>
+      <h1>Contact</h1>
       <form className="form">
-      <h3>
-       Name:
-      </h3>
+        <h3>Name:</h3>
         <input
           value={fullName}
           name="fullName"
@@ -55,19 +55,16 @@ function Contact() {
           type="text"
           placeholder="Name"
         />
-       <h3>
-       Email address:
-      </h3>
+        <h3>Email address:</h3>
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
           type="text"
-          placeholder="email"
+          placeholder="Email"
         />
-        <h3>
-       Message:
-      </h3>
+        {emailError && <p style={{ color: 'red' }}>{emailError}</p>}
+        <h3>Message:</h3>
         <input
           value={message}
           name="message"
@@ -84,4 +81,3 @@ function Contact() {
 }
 
 export default Contact;
-

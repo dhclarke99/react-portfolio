@@ -1,118 +1,107 @@
 #root {
-    background: #003366
-}
-
-#tab-content {
-    padding: 50px
-}
-
-#form-content {
+    background: #003366;
+  }
+  
+  #tab-content {
+    padding: 50px;
+  }
+  
+  #form-content {
     display: flex;
     flex-direction: column;
     padding: 50px;
     width: 50%;
-    
-}
-
-form {
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
-    
-}
-.nav-item {
+  }
+  
+  .nav-item {
     margin: 0px 20px 0px 20px;
     --bs-nav-link-color: white;
-    font-size: 25px
-}
-
-.col a img {
+    font-size: 25px;
+  }
+  
+  .col a img {
     width: 100%;
     height: 300px;
-}
-
-.portfolio {
+  }
+  
+  .portfolio {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 20px;
-}
-
-
-html {
-    /* To make use of full height of page*/
+  }
+  
+  html {
     min-height: 100%;
     margin: 0;
-    background: #003366
-}
-body {
+    background: #003366;
+  }
+  
+  body {
     min-height: 100%;
     margin: 0;
     background: #003366;
     --bs-body-font-family: "Lucida Handwriting", Cursive;
-}
-
-.container {
-    min-width: 100%
-
-}
-
-header {
+  }
+  
+  .container {
+    min-width: 100%;
+  }
+  
+  header {
     min-width: 100%;
     background-color: rgb(62, 110, 8);
     padding: 35px;
-    --bs-body-font-weight: 100px
-}
-
-footer {
-    
+    --bs-body-font-weight: 100px;
+  }
+  
+  footer {
     display: flex;
     padding: 50px;
     justify-content: center;
-    
-}
-
-footer ul {
-    
+  }
+  
+  footer ul {
     display: flex;
-    
-    
-}
-
-footer ul li{
+  }
+  
+  footer ul li {
     padding: 30px;
     list-style: none;
     width: 10px;
     height: 10px;
-    
-    
-}
-
-footer ul li img {
+  }
+  
+  footer ul li img {
     object-fit: contain;
     height: 40px;
-}
-
-h1 {
-    color: white
-}
-
-p {
-    color: white
-}
-
-h2 {
-    color: white
-}
-
-h3 {
-    color: white
-}
-
-li {
+  }
+  
+  h1 {
     color: white;
-   
-}
-
-.portfolio-item {
+  }
+  
+  p {
+    color: white;
+  }
+  
+  h2 {
+    color: white;
+  }
+  
+  h3 {
+    color: white;
+  }
+  
+  li {
+    color: white;
+  }
+  
+  .portfolio-item {
     position: relative;
     display: inline-block;
     height: 400px;
@@ -124,7 +113,7 @@ li {
     overflow: hidden;
     width: 100%;
     height: 100%;
-    margin: 10px; 
+    margin: 10px;
   }
   
   .portfolio-image {
@@ -164,26 +153,14 @@ li {
   
   .portfolio-overlay h2 {
     color: rgb(247, 247, 5);
-    font-size: 24px; 
-    text-align: center; 
-    margin: 10px; 
+    font-size: 24px;
+    text-align: center;
+    margin: 10px;
   }
   
-  @media (max-width: 768px) {
-    .portfolio-item {
-      height: auto;
-      margin: 15px; 
-    }
-
-    .portfolio-overlay h2 {
-        font-size: 1.2rem;
-        margin: 0.3rem; 
-      }
-  }
+  /* Styles for Contact Form */
   
- /* Styles for Contact Form */
-
-.form {
+  .form {
     margin-top: 20px;
   }
   
