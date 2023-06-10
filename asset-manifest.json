@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.52f0cb82.css",
-    "main.js": "/react-portfolio/static/js/main.eb94c7ec.js",
+    "main.css": "/react-portfolio/static/css/main.d83dab3e.css",
+    "main.js": "/react-portfolio/static/js/main.1683a5ad.js",
     "static/media/DatePlanner.png": "/react-portfolio/static/media/DatePlanner.651b6eadf7c454617b4a.png",
     "static/media/Tech Blog.png": "/react-portfolio/static/media/Tech Blog.ae9158a51256258dc8c0.png",
     "static/media/BucketList.png": "/react-portfolio/static/media/BucketList.834404e6f3fe48368256.png",
@@ -9,11 +9,11 @@
     "static/media/gitHubLogo.png": "/react-portfolio/static/media/gitHubLogo.36521c4c192bae062b1b.png",
     "static/media/NoteTaker.png": "/react-portfolio/static/media/NoteTaker.9cd616e89a15d869e900.png",
     "index.html": "/react-portfolio/index.html",
-    "main.52f0cb82.css.map": "/react-portfolio/static/css/main.52f0cb82.css.map",
-    "main.eb94c7ec.js.map": "/react-portfolio/static/js/main.eb94c7ec.js.map"
+    "main.d83dab3e.css.map": "/react-portfolio/static/css/main.d83dab3e.css.map",
+    "main.1683a5ad.js.map": "/react-portfolio/static/js/main.1683a5ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.52f0cb82.css",
-    "static/js/main.eb94c7ec.js"
+    "static/css/main.d83dab3e.css",
+    "static/js/main.1683a5ad.js"
   ]
 }
